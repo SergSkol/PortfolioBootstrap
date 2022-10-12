@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sergiy's Portfolio (Bootstrap version)</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Bootstrap 3 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
+    <style>
+      body {
+        font: "Inter", FontAwesome, sans-serif;
+      }
+
+      .bg-1 {
+        color: #172b4b;
+      }
+
+      .bg-2 {
+        color: #008552;
+      }
+
+      .bg-3 {
+        background-color: #e5e5e5; /* Grey */
+        color: #3a4a42;
+      }
+
+      .container-fluid {
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+
+      .navbar {
+        position: sticky;
+        top: 0;
+      }
+
+      .header {
+        margin-top: 30px;
+        background-image: url("./img/Header-llustration-desktop.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+  
+      @media screen and (max-width: 768px) {
+        .header{
+          background-image: url("./img/header-illsutration-mobile.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+        } 
+      }
+
+      .card {
+        border: 1px solid #d0d9d4;
+        border-radius: 8px;
+        padding: 0;
+        margin: 0 24px 32px 0;
+      }
+
+      .card-title {
+        margin: 16px;
+        font-weight: 600;
+      }
+
+      .btn {
+        margin: 24px;
+      }
+
+      .about-icon {
+        height: 90px;
+        margin: 40px 12px 10px;
+      }
+
+      @media screen and (min-width: 768px){
+        .contact {
+        display: flex;
+        flex-direction: row;
+        }
+
+        .contact-title {
+          width: 50%;
+          margin: 0 12px 0 12px;
+        }
+
+        .contact-form {
+          width: 50%;
+        }
+      }
+ 
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default sticky-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Welcome</a>
+          <button type="button" class="navbar-toggle fa fa-bars" data-toggle="collapse" data-target="#myNavbar">
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid bg-1 text-center header">
+      <div class="container-fluid bg-1 text-center">
+        <h1>Hey there. I'm Sergiy</h1>
+      </div>
+
+      <div class="container-fluid bg-2 text-center">
+        <h2>I'm a software developer</h2>
+      </div>
+
+      <div class="container-fluid bg-1 text-center">
+        <h4> I can help you build a product , 
+          feature or website 
+          Look through some of my work and experience! 
+          If you like what you see and have a project you need coded, 
+          don't hestiate to contact me.
+        </h4>
+      </div>
+
+      <div class="container-fluid bg-1 text-center">
+        <a class="social fa fa-twitter" href="http://twitter.com/sps676"></a>
+        <a class="social fa fa-linkedin" href="https://www.linkedin.com/in/sergiy-shkolnik-7801a53/"></a>
+        <a class="social fa fa-github" href="https://github.com/SergSkol"></a>
+      </div>
+    </div>
+
+    <div class="container-fluid bg-1 text-center">
+      <h2 id="portfolio">My Recent Works</h2>
+
+      <div class="card col-lg-4" style="width:329px">
+        <img class="card-img-top" src="./img/Img Plaholder.png" alt="Card image">
+        <div class="card-body">
+          <h3 class="card-title">Multi-Post Stories Gain+Glory</h3>
+          <div class="row">
+            <span class="badge bg-secondary">Ruby on rails</span>
+            <span class="badge bg-secondary">CSS</span>
+            <span class="badge bg-secondary">JavaScript</span>
+            <span class="badge bg-secondary">HTML</span>
+          </div>
+          <div class="row">
+            <a href="#" class="btn btn-primary">See Project</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card col-lg-4" style="width:329px">
+        <img class="card-img-top" src="./img/Img Plaholder.png" alt="Card image">
+        <div class="card-body">
+          <h3 class="card-title">Multi-Post Stories Gain+Glory</h3>
+          <div class="row">
+            <span class="badge bg-secondary">Ruby on rails</span>
+            <span class="badge bg-secondary">CSS</span>
+            <span class="badge bg-secondary">JavaScript</span>
+            <span class="badge bg-secondary">HTML</span>
+          </div>
+          <a href="#" class="btn btn-primary">See Project</a>
+        </div>
+      </div>
+
+      <div class="card col-lg-4" style="width:329px">
+        <img class="card-img-top" src="./img/Img Plaholder.png" alt="Card image">
+        <div class="card-body">
+          <h3 class="card-title">Multi-Post Stories Gain+Glory</h3>
+          <div class="row">
+            <span class="badge bg-secondary">Ruby on rails</span>
+            <span class="badge bg-secondary">CSS</span>
+            <span class="badge bg-secondary">JavaScript</span>
+            <span class="badge bg-secondary">HTML</span>
+          </div>
+          <a href="#" class="btn btn-primary">See Project</a>
+        </div>
+      </div>
+
+      <div class="card col-lg-4" style="width:329px">
+        <img class="card-img-top" src="./img/Img Plaholder.png" alt="Card image">
+        <div class="card-body">
+          <h3 class="card-title">Multi-Post Stories Gain+Glory</h3>
+          <div class="row">
+            <span class="badge bg-secondary">Ruby on rails</span>
+            <span class="badge bg-secondary">CSS</span>
+            <span class="badge bg-secondary">JavaScript</span>
+            <span class="badge bg-secondary">HTML</span>
+          </div>
+          <div class="row">
+            <a href="#" class="btn btn-primary">See Project</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card col-lg-4" style="width:329px">
+        <img class="card-img-top" src="./img/Img Plaholder.png" alt="Card image">
+        <div class="card-body">
+          <h3 class="card-title">Multi-Post Stories Gain+Glory</h3>
+          <div class="row">
+            <span class="badge bg-secondary">Ruby on rails</span>
+            <span class="badge bg-secondary">CSS</span>
+            <span class="badge bg-secondary">JavaScript</span>
+            <span class="badge bg-secondary">HTML</span>
+          </div>
+          <a href="#" class="btn btn-primary">See Project</a>
+        </div>
+      </div>
+
+      <div class="card col-lg-4" style="width:329px">
+        <img class="card-img-top" src="./img/Img Plaholder.png" alt="Card image">
+        <div class="card-body">
+          <h3 class="card-title">Multi-Post Stories Gain+Glory</h3>
+          <div class="row">
+            <span class="badge bg-secondary">Ruby on rails</span>
+            <span class="badge bg-secondary">CSS</span>
+            <span class="badge bg-secondary">JavaScript</span>
+            <span class="badge bg-secondary">HTML</span>
+          </div>
+          <a href="#" class="btn btn-primary">See Project</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid bg-1 text-center">
+      <h2 id="about">About me</h2>
+    </div>
+
+    <div class="container-fluid bg-1 text-center">
+      <h4> I can help you build a product , 
+        feature or website 
+        Look through some of my work and experience! 
+        If you like what you see and have a project you need coded, 
+        don't hestiate to contact me.
+      </h4>
+    </div>
+
+    <div class="container-fluid bg-1 text-center">
+      <a href="#" class="btn btn-primary">Get My Resume</a>
+    </div>
+
+    <div class="container-fluid bg-1 text-center">
+      <div class="card col-lg-4 bg-3" style="width:329px; height: 302px">
+        <img class="card-img-top about-icon" src="./img/langs.png" alt="Languages">
+        <div class="card-body">
+          <h4 class="card-title">Languages</h4>
+          <div class="row">
+            <span class="badge bg-secondary">JavaScript</span>
+            <span class="badge bg-secondary">Ruby</span>
+            <span class="badge bg-secondary">HTML</span>
+            <span class="badge bg-secondary">CSS</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card col-lg-4 bg-3" style="width:329px; height: 302px">
+        <img class="card-img-top about-icon" src="./img/frameworks.png" alt="Frameworks">
+        <div class="card-body">
+          <h4 class="card-title">Frameworks</h4>
+          <div class="row">
+            <span class="badge bg-secondary">Bootstrap</span>
+            <span class="badge bg-secondary">Ruby on rails</span>
+            <span class="badge bg-secondary">RSpec</span>
+            <span class="badge bg-secondary">Capybara</span>
+            <span class="badge bg-secondary">Selenium</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card col-lg-4 bg-3" style="width:329px; height: 302px">
+        <img class="card-img-top about-icon" src="./img/skills.png" alt="Skills">
+        <div class="card-body">
+          <h4 class="card-title">Skills</h4>
+          <div class="row">
+            <span class="badge bg-secondary">Codekit</span>
+            <span class="badge bg-secondary">GitHub</span>
+            <span class="badge bg-secondary">Codepen</span>
+            <span class="badge bg-secondary">Gitlab</span>
+            <span class="badge bg-secondary">Terminal</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact container-fluid bg-1 text-center float-left">
+      <div class="contact-title container-fluid bg-1 text-center">
+        <h2 id="contact">I'm always interested in hearing about new projects, 
+          so if you'd like to chat please get in touch.
+        </h2>
+      </div>
+
+      <form class="contact-form" action="https://formspree.io/f/mdojgjjo" method="post">
+        <div class="mb-3 mt-3">
+          <label for="name" class="form-label invisible">Full name</label>
+          <input type="name" class="form-control" id="name" placeholder="Full name" name="user_name" required
+          maxlength="30">
+        </div>
+        <div class="mb-3 mt-3">
+          <label for="email" class="form-label invisible">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Email address" name="email" required>
+        </div>
+        <div>
+          <label for="msg" class="invisible">Message</label>
+          <textarea class="form-control" rows="5" id="msg" name="user_message" placeholder="Enter text here" required maxlength="500"></textarea>
+        </div>
+        <div class="container-fluid bg-1 text-center">
+          <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+      </form>
+    </div>
+
+    <div class="container-fluid bg-1 text-center">
+      <a class="social fa fa-twitter" href="http://twitter.com/sps676"></a>
+      <a class="social fa fa-linkedin" href="https://www.linkedin.com/in/sergiy-shkolnik-7801a53/"></a>
+      <a class="social fa fa-github" href="https://github.com/SergSkol"></a>
+    </div>
+
+    <div class="container-fluid bg-1 text-center">
+      <p>sps676@gmail.com</p>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</html>
