@@ -48,15 +48,15 @@
         background-repeat: no-repeat;
         background-size: cover;
       }
+  
 
-      @include media-breakpoint-down(sm) {
-        .header {
-          margin-top: 30px;
-          background-image: url("./img/header-illsutration-mobile.png");
+      @media screen and (max-width: 768px) {
+        .header{
+        background-image: url("./img/header-illsutration-mobile.png");
           background-repeat: no-repeat;
           background-size: cover;
-        }
-      }
+      } 
+    }
 
       .card {
         border: 1px solid #d0d9d4;
@@ -290,7 +290,7 @@
       </div>
     </div>
 
-    <div class="contact container-fluid bg-1 text-center d-flex flex-row">
+    <div class="contact container-fluid bg-1 text-center float-left">
       <div class="contact-title container-fluid bg-1 text-center">
         <h2 id="contact">I'm always interested in hearing about new projects, 
           so if you'd like to chat please get in touch.
